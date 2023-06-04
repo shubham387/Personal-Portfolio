@@ -1,0 +1,183 @@
+:root{
+    --primary-bg: #ffffff55;
+    --secondary-bg: #ebebeb;
+    --primary-text: #191a1c;
+    --secondary-text: #555555;
+    --highlight-color: #ffc905;
+}
+/* @media (prefers-color-scheme: dark) {
+    :root{
+    --primary-bg: #303030;
+    --secondary-bg: #ebebeb;
+    --primary-text: #d2d2d2;
+    --secondary-text: #565656;
+    }
+  } */
+  @font-face {
+    font-family: 'Karla';
+    src: url('./assets/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    /* Additional font properties */
+  }
+html {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    /* background-image:url('./clean-modern-resume-cv-template-2/402_resume.jpg') ; */
+    background-size: cover;
+}
+body {
+    width: 100%;
+    max-width: 850px;
+    margin:10px auto;
+    font-family: Karla;
+    padding: 25px 0px;
+    box-shadow: 0px 0px 35px #999;
+}
+.two-by-four{
+    grid-template-columns: 2fr 4fr;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body > * {
+    padding: 0px 20px;
+}
+* {
+    margin: 0px;
+}
+.highlight-bg{
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 0px 10px;
+}
+.secondary-bg {
+    background-color: var(--secondary-bg);
+}
+.highlight-below {
+    position: relative;
+    margin-bottom: 30px;
+}
+.highlight-below::after {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background: var(--highlight-color);
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    max-width: 30px;
+border-radius: 5px;
+  }
+.position {
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+  }
+  .ul {
+    list-style: initial;
+  }
+.bg-round {
+    border-radius: 5px;
+}
+meter {
+    width: 100%;
+}
+meter::-webkit-meter-optimum {
+    background-color: var(--highlight-color);
+}
+meter::-moz-meter-optimum-value {
+    background-color: var(--highlight-color);
+}
+.heavy {
+    font-weight: bold;
+}
+.text-secondary {
+    color: var(--secondary-text)
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.side-bg{
+    background-color: var(--secondary-bg);
+}
+.m-auto {
+    margin: auto;
+}
+.grid {
+    display: grid !important;
+}
+.grid-1{
+    grid-template-columns: 1fr;
+  }
+.grid-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-5{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gap-5{
+    gap: 5px;
+  }
+  .gap-10{
+    gap: 10px;
+  }
+  .gap-15{
+    gap: 15px;
+  }
+  .gap-20{
+    gap: 20px;
+  }
+  .gap-25{
+    gap: 25px;
+  }
+  .gap-30{
+    gap: 30px;
+  }
+@media only screen and (max-width: 925px){
+    :root{
+        font-size: 12px;
+    }
+    .mobile-hide {
+        display: none !important;
+    }
+    .grid-mobile-1{
+        grid-template-columns: 1fr;
+      }
+      .grid-mobile-2{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid-mobile-3{
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid-mobile-4{
+        grid-template-columns: repeat(4, 1fr);
+      }
+}
+
+@media only screen and (min-width: 925px){
+    .desk-hide {
+        display: none !important;
+    }
+      .grid-desk-2{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid-desk-3{
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid-desk-4{
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+}

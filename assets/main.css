@@ -1,0 +1,58 @@
+.main-position {
+    padding: 5px 16px;
+    margin-top: -15px;
+    margin-left: 30px;
+    font-size: 1.2em;
+  }
+  .experties-item {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .main-side-section {
+    margin-top: 30px;
+    padding: 10px 20px;
+  }
+  .meter{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-color: var(--secondary-text);
+  }
+
+  .meter::before {
+    content: "";
+    width: 0%;
+    background: var(--highlight-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 1s;
+  }
+  
+  .meter::after {
+    content: "";
+    width: 1.5px;
+    height: 8px;
+    position: absolute;
+    left: 0%;
+    background: var(--highlight-color);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: left 1s;
+  }
+
+  #shopify::before{
+    width: 90%;
+  }
+  #shopify::after {
+    left: 90%;
+  }
+
+  @media screen  and (min-width: 925px){
+    .main-side-section {
+        margin-left: 12px;
+    }
+  }
