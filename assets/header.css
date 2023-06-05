@@ -1,4 +1,4 @@
-header article {
+article {
     padding: clamp(10px, 2vw, 2em) clamp(20px, 4vw, 3em);
 }
 hgroup{
@@ -9,7 +9,7 @@ hgroup{
 }
 .about-me .heading {
     margin-bottom: 30px;
-    font-size: clamp(15px, 2vw, 1.3em);
+    /* font-size: clamp(15px, 2vw, 1.3em); */
 }
 header figure, .author-pic {
     height: 100%;
