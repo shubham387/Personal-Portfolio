@@ -33,6 +33,26 @@
   main article {
     margin-top: 15px;
   }
+  .job-position {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .job-duration {
+    margin-bottom: 8px;
+  }
+  .job-duration .duration {
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 2px 10px;
+    font-size: 0.8em;
+  }
+  .summary-item:not(:last-child){
+    margin-bottom: 5px;
+  }
+  .experience-wrapper {
+    margin-bottom: 35px;
+  }
   
   .meter::after {
     content: "";
@@ -47,13 +67,71 @@
     transition: left 1s;
   }
 
-  #shopify::before{
-    width: 90%;
+  #shopify::before, #html::before, #javascript::before, #responsive::before{
+    width: 95%;
   }
-  #shopify::after {
-    left: 90%;
+  #shopify::after, #html::after,  #javascript::after, #responsive::after {
+    left: 95%;
   }
-
+  #jquery::before, #rest::before, #bootstrap::before{
+    width: 80%;
+  }
+  #jquery::after, #rest::after, #bootstrap::after {
+    left: 80%;
+  }
+  #react::before {
+    width: 70%;
+  }
+  #react::after{
+    left: 70%;
+  }
+  #wordpress::before {
+    width: 60%;
+  }
+  #wordpress::after {
+    left: 60%;
+  }
+  #figma::before, #adobe::before {
+    width: 50%;
+  }
+  #figma::after, #adobe::after {
+    left: 50%;
+  }
+  .main-side-wrapper {
+    position: sticky;
+    top: -12px;
+}
+.contact-icon svg {
+  width: 25px;
+  height: 25px;
+}
+.contact-info {
+  padding: 8px 0px;
+}
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.contact-item {
+  grid-template-columns: 1fr 5fr;  
+}
+.contact-list li:last-child .contact-icon,
+.contact-list li:last-child .contact-info{
+  color: transparent;
+}
+.education-course, .education-university {
+  margin-bottom: 5px;
+}
+.education-wrapper {
+  margin-bottom: 20px;
+}
+.main-side-section.contact {
+  margin-top: 0px;
+} 
+.main-side-section:last-child{
+  padding-bottom: 0px;
+}
   @media screen  and (min-width: 925px){
     .main-side-section {
         margin-left: 12px;

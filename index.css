@@ -39,6 +39,13 @@ img {
     display: block;
     max-width: 100%;
 }
+svg {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
 body > * {
     padding: 0px 20px;
 }
@@ -74,7 +81,6 @@ border-radius: 5px;
     letter-spacing: 2px;
     font-weight: 500;
   }
- 
   .no-bullet {
     list-style: none;
     padding: initial;
