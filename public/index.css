@@ -13,6 +13,11 @@
     --secondary-text: #565656;
     }
   } */
+@font-face {
+    font-family: 'Karla';
+    src: url('./assets/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    /* Additional font properties */
+  }
 
 html {
     background-color: var(--primary-bg);
