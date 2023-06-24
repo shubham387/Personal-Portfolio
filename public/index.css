@@ -16,6 +16,7 @@
 @font-face {
     font-family: 'Karla';
     src: url('./assets/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    font-display: auto;
     /* Additional font properties */
   }
 
