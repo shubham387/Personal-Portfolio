@@ -1,4 +1,4 @@
-article {
+header article, main > article {
     padding: clamp(10px, 2vw, 2em) clamp(20px, 4vw, 3em);
 }
 hgroup{
